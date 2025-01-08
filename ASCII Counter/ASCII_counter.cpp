@@ -22,8 +22,8 @@ int main (int argc, char* argv[])
 
     else
     {
-        cout << "1) Usage: ./ASCII_counter\n";
-        cout << R"(2) Usage: ./ASCII_counter "SOME_STRING")" << endl;
+        cout << "1) Usage: ./program_name\n";
+        cout << R"(2) Usage: ./program_name "SOME_STRING")" << endl;
     }
     return 0;
 }
