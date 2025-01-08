@@ -5,12 +5,26 @@ using namespace std;
 
 void counter(const string& input);
 
-int main (void)
+int main (int argc, char* argv[])
 {
-    string input{};
-    cout << "Enter something: ";
-    getline(cin, input);
-    counter(input);
+    if(argc == 1)
+    {
+        string input{};
+        cout << "Enter something: ";
+        getline(cin, input);
+        counter(input);
+    }
+
+    else if(argc == 2)
+    {
+        counter(argv[1]);
+    }
+
+    else
+    {
+        cout << "1) Usage: ./ASCII_counter\n";
+        cout << R"(2) Usage: ./ASCII_counter "SOME_STRING")" << endl;
+    }
     return 0;
 }
 
@@ -61,4 +75,6 @@ void counter(const string& input)
         }
     }
     system("pause");
+
+
 }
