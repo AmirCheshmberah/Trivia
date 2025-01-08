@@ -25,6 +25,10 @@ int main (int argc, char* argv[])
         cout << "1) Usage: ./program_name\n";
         cout << R"(2) Usage: ./program_name "SOME_STRING")" << endl;
     }
+
+    cout << "\nPress Enter to Exit\n";
+    cin.get();
+    exit(0);
     return 0;
 }
 
@@ -74,7 +78,4 @@ void counter(const string& input)
             usleep(100000);
         }
     }
-    system("pause");
-
-
 }
