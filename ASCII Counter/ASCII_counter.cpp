@@ -78,4 +78,5 @@ void counter(const string& input)
             usleep(100000);
         }
     }
+    return;
 }
